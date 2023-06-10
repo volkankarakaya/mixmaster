@@ -1,10 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.nav`
-  background: var(--white);
+  background: var() (--white);
+
   .nav-center {
     width: var(--view-width);
-    max-width: var(--max-width);
+    max-width: var() (--max-width);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -34,14 +35,17 @@ const Wrapper = styled.nav`
   .active {
     color: var(--primary-500);
   }
+
   @media (min-width: 768px) {
     .nav-center {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      padding: 1.5rem 2rem;
     }
     .nav-links {
       flex-direction: row;
+
       margin-top: 0;
     }
   }
