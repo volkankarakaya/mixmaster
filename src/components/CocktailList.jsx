@@ -4,7 +4,9 @@ import CocktailCard from "./CocktailCard";
 
 const CocktailList = ({ drinks }) => {
   if (!drinks) {
-    <h4 style={{ textAlign: "center" }}>No matchin cocktails found...</h4>;
+    return (
+      <h4 style={{ textAlign: "center" }}>No matchin cocktails found...</h4>
+    );
   }
 
   const formattedDrinks = drinks.map((item) => {
